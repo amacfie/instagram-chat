@@ -1,8 +1,7 @@
 module.exports = function(app) {
-	var router = require('express').Router();
+  var router = require('express').Router();
 
-	router.use('/instagram', require('./instagram')(app));
+  router.use('/instagram', require('./instagram')(app));
 
-	return router;
+  return router;
 };
-
